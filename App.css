@@ -1,0 +1,280 @@
+html,body { 
+  width:100%;
+  font-family:'Arial', 'Helvetica', 'sans-serif';
+  font-size:100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  HomepageCSS
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.Homepage{
+  width:100%;
+  height:768px; 
+  background-image: url("./mainBild.gif") ;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:center top;   
+  display: block;
+}
+.pers-info-icon{
+  font-size:4em;
+  position: fixed;
+  top:100px;
+  left:1px; 
+  color: #333333;
+  cursor: pointer;
+  z-index: 50000;
+}
+.text-persin{
+  font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+  position: fixed;
+  top: 80px;
+  left: 82px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.pers-info-icon:hover{
+  color:#f7fc40;
+}
+.HomeInfo{
+  width: 20%;
+  height: 768px; 
+   box-shadow: 4px 4px 10px #888888;
+   transition: all 0.3s ease-in-out;
+}
+#myname{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+.pers-info{  
+ padding-top: 200px;
+ padding-left: 15px;
+ 
+}
+.info-icon{float: left;}
+.info-text{
+   font-size: 1.2em;
+   font-family: 'Open Sans', sans-serif;
+  padding-top: 42px;
+  padding-left: 50px;
+  display: block;
+}
+.adicon{
+  font-size: 1.8em;
+ padding-top: 40px;
+  display: block;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  HeaderCSS
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+#navbar{
+  margin: 0; 
+  padding-left: 260px;
+  width: 100%;
+}
+#navbar li{
+  font-size: 1.6em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 3%;
+  list-style-type: none;
+  float: left;
+  
+}
+#navbar li a, .links{
+  text-decoration: none;
+  color: #333333;
+  letter-spacing: 0.05em;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+#navbar li a:hover, .links:hover{
+  background-color: #333333;
+  color: white;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  AusbildungCSS
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.Ausbildung{
+  width: 100%;
+  height: auto;
+  background-color: #efefef;
+  z-index: -1;
+}
+h1{
+  margin:0;
+  text-align: center;  
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5em;
+}
+.Ausbildung h1{
+  padding-top: 150px;
+}
+.timeline{
+
+  position: relative;
+  
+  margin-top: 7em;
+}
+.timeline-item{
+  padding: 0 0 0 50%;
+  position: relative;
+}
+.inner{
+  position: relative;
+  padding: 0px 0 50px 55px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.3em;
+}
+.date{
+  font-style: italic;
+  font-weight: bold; 
+}
+.text{
+  padding: 0;
+  margin:0;}
+.kreis{ 
+  width: 2em;
+  height: 2em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: dodgerblue;
+  position: absolute;
+  left: 49%;
+  top: 0;
+  display: block; 
+}
+.kreis::before{
+  opacity: 0.5;
+  content: '';
+  position: absolute;
+  top: -8em;
+  left: 0.9em;
+  width: .2em;
+  height: 8em;
+  background: dodgerblue;  
+}
+.timeline .timeline-item:nth-child(2n) {
+    padding: 0 50% 0 0;
+}
+.timeline .timeline-item:nth-child(2n) .inner {
+    padding-left: 0;
+    padding-right: 60px;
+    text-align: right;
+}
+.timeline-item:first-child .kreis::before{
+  height: 5em;
+  top: -4em;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  KenntnisseCSS
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.Kenntnisse{
+  width: 100%;
+  height: 768px;
+  background-color: #efefef;
+}
+.sprachen, .it-kenntnisse{
+  width: 50%;
+  float:left; 
+  padding-top: 90px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+   display: inline-block;
+}
+.punkte{
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 7px 6px 10px 6px;
+  background: #f7fd36;
+  border-radius: 50%;  
+}
+.sprach-inner{
+  display: block; 
+  margin: 0 50px 10px 200px;
+}
+.sprachen h1{
+  margin-bottom: 85px;
+}
+.sprach-name{
+  float: left;
+}
+.dark{
+  background-color: #b6b6b6; 
+}
+.kreising-psd{
+  position: relative;
+  margin: 60px 0 30px 50px;
+}
+.kreising-inner{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 10px solid #FB544D;
+  margin-left: 10px;
+}
+.ey {
+  border-color: #b6b6b6 #b6b6b6 #f7fe2c #f7fe2c;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ey2 {
+  border-color: #f7fe2c transparent transparent transparent;
+  -webkit-transform: rotate(148deg);
+  -moz-transform: rotate(148deg);
+  -ms-transform: rotate(148deg);
+  -o-transform: rotate(148deg);
+  transform: rotate(148deg);
+}
+.kreising-illus{
+  margin:50px 0px 30px 200px ;
+}
+.kreising-html{
+  margin:50px 0px 30px 350px ;
+}
+.kreising-css{
+  margin:50px 0px 30px 500px ;
+}
+.kreising-java{
+  margin:90px 0px 0px 50px ;
+  padding-top:150px;
+}
+.kreising-js{
+  margin:0px 0px 0px 200px ;
+  padding-top:0px;
+}
+.kreising-miso{
+  margin:0px 0px 0px 350px ;
+  padding-top:0px;
+}
+.skill-name{
+  font-size: 0.9em;
+  position: absolute;
+  padding-left: 25px;
+  padding-top: 8px;
+  white-space: pre-wrap;
+}
+#miof{
+  padding-top: 20px;
+  font-size: 0.6em;
+}
+
+
+
